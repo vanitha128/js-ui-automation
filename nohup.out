@@ -1,0 +1,168 @@
+json-server [options] <source>
+
+Options:
+  --config, -c               Path to config file   [default: "json-server.json"]
+  --port, -p                 Set port                            [default: 3000]
+  --host, -H                 Set host                     [default: "localhost"]
+  --watch, -w                Watch file(s)                             [boolean]
+  --routes, -r               Path to routes file
+  --middlewares, -m          Paths to middleware files                   [array]
+  --static, -s               Set static files directory
+  --read-only, --ro          Allow only GET requests                   [boolean]
+  --no-cors, --nc            Disable Cross-Origin Resource Sharing     [boolean]
+  --no-gzip, --ng            Disable GZIP Content-Encoding             [boolean]
+  --snapshots, -S            Set snapshots directory              [default: "."]
+  --delay, -d                Add delay to responses (ms)
+  --id, -i                   Set database id property (e.g. _id) [default: "id"]
+  --foreignKeySuffix, --fks  Set foreign key suffix (e.g. _id as in post_id)
+                                                                 [default: "Id"]
+  --quiet, -q                Suppress log messages from output         [boolean]
+  --help, -h                 Show help                                 [boolean]
+  --version, -v              Show version number                       [boolean]
+
+Examples:
+  json-server db.json
+  json-server file.js
+  json-server http://example.com/db.json
+
+https://github.com/typicode/json-server
+
+Missing <source> argument
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+Cannot bind to the port 3000. Please specify another port number either through --port argument or through the json-server.json configuration file
+[0mPOST /books [32m201[0m 20.714 ms - 55[0m
+[0mPOST /books [32m201[0m 3.785 ms - 56[0m
+[0mGET /books/4 [32m200[0m 16.197 ms - 55[0m
+[0mGET /books/5 [32m200[0m 17.672 ms - 56[0m
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+Cannot bind to the port 3000. Please specify another port number either through --port argument or through the json-server.json configuration file
+[0mPOST /books [32m201[0m 7.146 ms - 55[0m
+[0mPOST /books [32m201[0m 10.964 ms - 56[0m
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+Cannot bind to the port 3000. Please specify another port number either through --port argument or through the json-server.json configuration file
+[0mPOST /books [32m201[0m 10.246 ms - 55[0m
+[0mPOST /books [32m201[0m 5.951 ms - 56[0m
+[0mPOST /books [32m201[0m 3.687 ms - 56[0m
+[0mPOST /books [32m201[0m 3.682 ms - 57[0m
+[0mGET /books/10 [32m200[0m 3.614 ms - 56[0m
+[0mGET /books/11 [32m200[0m 3.883 ms - 57[0m
+[0mPOST /books [32m201[0m 4.387 ms - 56[0m
+[0mPOST /books [32m201[0m 5.916 ms - 57[0m
+[0mGET /books/12 [32m200[0m 6.805 ms - 56[0m
+[0mGET /books/13 [32m200[0m 10.985 ms - 57[0m
+[0mPOST /books [32m201[0m 7.536 ms - 56[0m
+[0mPOST /books [32m201[0m 6.608 ms - 57[0m
+[0mGET /books/14 [32m200[0m 5.633 ms - 56[0m
+[0mGET /books/15 [32m200[0m 6.303 ms - 57[0m
+[0mPOST /books [32m201[0m 10.404 ms - 56[0m
+[0mPOST /books [32m201[0m 8.375 ms - 57[0m
+[0mGET /books/16 [32m200[0m 4.973 ms - 56[0m
+[0mGET /books/17 [32m200[0m 9.152 ms - 57[0m
+[0mPOST /books [32m201[0m 2.855 ms - 57[0m
+[0mPOST /books [32m201[0m 5.893 ms - 56[0m
+[0mGET /books/18 [32m200[0m 2.667 ms - 57[0m
+[0mGET /books/19 [32m200[0m 5.672 ms - 56[0m
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+Cannot bind to the port 3000. Please specify another port number either through --port argument or through the json-server.json configuration file
+
+  \{^_^}/ hi!
+
+  Loading data/mock-db.json
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+[0mPOST /books [32m201[0m 24.344 ms - 56[0m
+[0mPOST /books [32m201[0m 13.624 ms - 57[0m
+[0mGET /books/24 [32m200[0m 8.070 ms - 56[0m
+[0mGET /books/25 [32m200[0m 11.310 ms - 57[0m
+  data/mock-db.json has changed, reloading...
+
+  Loading data/mock-db.json
+  data/mock-db.json has changed, reloading...
+  Done
+
+  Resources
+  http://localhost:3000/books
+
+  Home
+  http://localhost:3000
+

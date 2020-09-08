@@ -1,0 +1,226 @@
+[
+  {
+    "description": "  I want to find a service NSW location",
+    "keyword": "Feature",
+    "name": "Find a service NSW location",
+    "line": 2,
+    "id": "find-a-service-nsw-location",
+    "tags": [
+      {
+        "name": "@suite",
+        "line": 1
+      }
+    ],
+    "uri": "features/servicensw/nsw-service.feature",
+    "elements": [
+      {
+        "id": "find-a-service-nsw-location;numberone",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "NumberOne",
+        "tags": [
+          {
+            "name": "@suite",
+            "line": 1
+          },
+          {
+            "name": "@critical",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4664000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user navigating to the \"https://www.service.nsw.gov.au\"",
+            "match": {
+              "location": "test/step_definitions/nsw-service.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I search for \"Find a Service NSW location\"",
+            "match": {
+              "location": "test/step_definitions/nsw-service.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4470000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I am re-directed to the search results page",
+            "match": {
+              "location": "test/step_definitions/nsw-service.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click on the \"Find a Service NSW location\" link",
+            "match": {
+              "location": "test/step_definitions/nsw-service.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I am re-directed to the \"Find a Service NSW location\" page",
+            "match": {
+              "location": "test/step_definitions/nsw-service.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "find-a-service-nsw-location;numbertwo",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "NumberTwo",
+        "tags": [
+          {
+            "name": "@suite",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2405000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am a user on the \"Find a Service NSW location\" page",
+            "match": {
+              "location": "test/step_definitions/nsw-service-center.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I search for \"Sydney 2000\" in the \"Search by suburb, postcode or current location\" field",
+            "match": {
+              "location": "test/step_definitions/nsw-service-center.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7580000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see \"Marrickville Service Centre\" and its address returned in the results",
+            "match": {
+              "location": "test/step_definitions/nsw-service-center.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/support/hooks.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

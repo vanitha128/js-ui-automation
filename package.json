@@ -1,0 +1,89 @@
+{
+  "name": "js-automation",
+  "version": "1.0.0",
+  "description": "JS cucumber selenium automation",
+  "scripts": {
+    "test-chrome": "bnr test:e2e:chrome",
+    "test-chrome-critical": "bnr test:e2e:chrome-critical",
+    "test-chrome-regression": "bnr test:e2e:chrome-regression",
+    "test-firefox": "bnr test:e2e:firefox",
+    "test-firefox-critical": "bnr test:e2e:firefox-critical",
+    "test-firefox-regression": "bnr test:e2e:firefox-regression"
+  },
+  "betterScripts": {
+    "test:e2e:chrome": {
+      "command": "bnr test:e2e",
+      "env": {
+        "BROWSER": "chrome",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    },
+    "test:e2e:chrome-critical": {
+      "command": "bnr test:e2e-critical",
+      "env": {
+        "BROWSER": "chrome",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    },
+    "test:e2e:chrome-regression": {
+      "command": "bnr test:e2e-regression",
+      "env": {
+        "BROWSER": "chrome",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    },
+    "test:e2e": "cucumber-js --tags '@critical or @regression' features/ -r test/cucumber-bootstrap.js -r test/support -r test/step_definitions -f json:cucumber_report.json --parallel 1",
+    "test:e2e-critical": "cucumber-js --tags @critical features/servicensw/nsw-service.feature -r test/cucumber-bootstrap.js -r test/support -r test/step_definitions -f json:cucumber_report.json --parallel 1",
+    "test:e2e-regression": "cucumber-js --tags @regression features/servicensw/nsw-service.feature -r test/cucumber-bootstrap.js -r test/support -r test/step_definitions -f json:cucumber_report.json --parallel 1",
+    "test:e2e:firefox": {
+      "command": "bnr test:e2e",
+      "env": {
+        "BROWSER": "firefox",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    },
+    "test:e2e:firefox-critical": {
+      "command": "bnr test:e2e-critical",
+      "env": {
+        "BROWSER": "firefox",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    },
+    "test:e2e:firefox-regression": {
+      "command": "bnr test:e2e-regression",
+      "env": {
+        "BROWSER": "firefox",
+        "HEADLESS": true,
+        "BASE_URL": "https://www.service.nsw.gov.au/"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanitha128/js-automation.git"
+  },
+  "author": {
+    "name": "Vanitha Annamalai",
+    "email": "vanitha.annamalai@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vanitha128/js-automation/issues"
+  },
+  "homepage": "https://github.com/vanitha128/js-automation#readme",
+  "devDependencies": {
+    "better-npm-run": "=0.1.1",
+    "chromedriver": "=84.0.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "=5.2.0",
+    "env-var": "=6.3.0",
+    "geckodriver": "=1.8.1",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "stampit": "=4.3.1"
+  }
+}
